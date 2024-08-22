@@ -106,7 +106,7 @@ const DynamicTable = () => {
         value={headers}
         onChange={(e) => setHeaders(e.target.value)}
       />
-      <Label>Data Variable</Label>
+      {/* <Label>Data Variable</Label>
       <Input
         value={dataVariable}
         onChange={(e) => setDataVariable(e.target.value)}
@@ -120,7 +120,7 @@ const DynamicTable = () => {
           <SelectItem value="Array">Array</SelectItem>
           <SelectItem value="Object">Object</SelectItem>
         </SelectContent>
-      </Select>
+      </Select> */}
       <Button onClick={handleApiCall}>Fetch Api Response</Button>
 
       {apiResponse && Array.isArray(apiResponse) && (
